@@ -16,7 +16,6 @@ public class CorpoCobrinha extends Node {
         g.setColor(Color.CYAN);
         g.fillRect(this.getX(), this.getY(), Node.TAMANHO, Node.TAMANHO);
         
-        
     }
     
     

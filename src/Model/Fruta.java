@@ -10,7 +10,7 @@ public class Fruta extends Node {
 
     public Fruta(int x, int y) {
         super(x, y);
-        this.fruta = new ImageIcon("src/Assets/bolinha.png");
+        this.fruta = new ImageIcon("src/Assets/icon.png");
     }
 
     @Override

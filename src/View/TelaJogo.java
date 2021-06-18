@@ -1,8 +1,11 @@
 package View;
 
+import Controller.TelaJogoController;
+
 public class TelaJogo extends TelaBase{
 
-    public GamePanel gamePanel;
+    public GamePanel gamePanel;    
+    private TelaJogoController controle;
     
     public TelaJogo() {
         
@@ -10,6 +13,9 @@ public class TelaJogo extends TelaBase{
         this.gamePanel = new GamePanel();
         this.gamePanel.setBounds(0,0,640,480);
         add(this.gamePanel);
+        controle = new TelaJogoController(this);
+        addKeyListener(controle);
+        controle.inicializar();
         
     }
     

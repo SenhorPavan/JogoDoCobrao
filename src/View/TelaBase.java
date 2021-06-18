@@ -11,7 +11,7 @@ public abstract class TelaBase extends JFrame{
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setResizable(false);
         setLocationRelativeTo(null);
-        setIconImage(new ImageIcon("src/Assets/Icon.png").getImage());
+        setIconImage(new ImageIcon("src/Assets/bolinha.png").getImage());
         setVisible(true);
     }
     

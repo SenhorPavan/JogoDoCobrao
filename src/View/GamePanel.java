@@ -24,8 +24,9 @@ public class GamePanel extends JPanel implements ActionListener{
 
     private Cobrinha cobrinha;
     private Fruta fruta;
-    private int FPS;
-    private Timer timer;
+    private final int FPS;
+
+    private final Timer timer;
 
     @Override
     public void paintComponent(Graphics g) {
@@ -38,7 +39,11 @@ public class GamePanel extends JPanel implements ActionListener{
         
        
     }
-
+    
+    public Timer getTimer() {
+        return timer;
+    }
+    
     public void setFruta(Fruta fruta) {
         this.fruta = fruta;
     }
